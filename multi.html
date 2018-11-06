@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Multiplikationstabell</title>
+</head>
+<body>
+    
+    <script>
+        function multi(){
+            let result = '\n'
+            let tal = prompt("Ange ett tal mellan 1-10: ");
+            for(let i = 1 ; i < tal.length; i++){
+                for(let j = 1; j < tal.length; i++){
+                    result += (i * j) + ' ';
+                }result = '\n';
+            }   
+        }    
+        console.log(multi());
+        
+    </script>
+
+
+</body>
+</html>

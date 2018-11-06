@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simhall</title>
+</head>
+<body>  
+
+    <script>
+        function Simhall(){
+            let sum = prompt('Ange uppgifter i detta format '+ '\n' + '\n'
+             + '"Pris-Årskort, Pris-biljett, Antal besök"'
+             + '\n' + '\n' + ' tex:' ,'100 10 2')
+             sum = sum.split(' ');
+            
+            if(!sum){
+                return alert("wrong")
+             }else if(sum[0] >= (sum[1]*sum[2])){
+                return alert('Det är mer värt att köpa årskort för ' + sum[0] + ' kr'); 
+            }else if(sum[0] < (sum[1]*sum[2])){
+                return alert('Det är mer värt att köpa singel biljetter ' + (sum[1]*sum[2]) + ' kr');
+            }
+           
+            
+        }
+Simhall();
+    </script>
+    
+</body>
+</html>

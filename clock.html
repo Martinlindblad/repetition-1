@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clock</title>
+</head>
+<body onload="tid()">
+    <div id="theDiv">
+
+
+    </div>
+    <script>
+        
+        function tid(){
+            let time = new Date()
+            let min = time.getMinutes()
+            let sec = time.getSeconds()
+            timeInterval = setTimeout(() => {tid()
+                }, 500);
+            if(min < 10){
+                min = '0' + min;
+            }
+            if(sec < 10){
+                sec = '0' + sec;
+            }
+
+            return document.getElementById("theDiv").innerHTML = time.getHours() + ':' + min + ':' + sec;
+
+        }    
+    </script>
+    
+</body>
+</html>
