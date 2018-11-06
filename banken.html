@@ -10,8 +10,19 @@
     
     <script>
         function bank(){
-            
-        }    
+            let moms = prompt("Ange antal procent: ");
+            moms = moms* 0.01;
+            let years = prompt("Ange antal år: ");
+            let kr = 1000;
+            let kr1 = [];
+            let output;
+            for(let i = 0; i < years; i++){
+                kr1.push(kr += kr * moms)
+                output = i + '\t' + kr1[i]
+
+            }
+            return output      
+        }    alert(bank())
         
         
     </script>
